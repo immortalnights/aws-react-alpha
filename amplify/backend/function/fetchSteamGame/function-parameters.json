@@ -1,0 +1,19 @@
+{
+  "lambdaLayers": [],
+  "permissions": {
+    "api": {
+      "awsreactalpha": [
+        "Query",
+        "Mutation",
+        "Subscription"
+      ]
+    },
+    "storage": {
+      "Game:@model(appsync)": [
+        "create",
+        "read",
+        "update"
+      ]
+    }
+  }
+}

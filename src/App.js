@@ -1,7 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from './logo.svg'
+import './App.css'
+import Amplify from '@aws-amplify/core'
+import awsconfig from './aws-exports'
+import { Game } from './models'
 
 function App() {
+  Amplify.configure(awsconfig)
+
+  const getEverything = async () => {
+    const models = await Amplify.DataStore.query(Game);
+    console.log(models);
+  }
+  const saveSomething = async () => {
+    await Amplify.DataStore.save(
+      new Game({
+        id: "1",
+        name: "mygame",
+      })
+    )
+  }
   return (
     <div className="App">
       <header className="App-header">
@@ -17,6 +34,8 @@ function App() {
         >
           Learn React
         </a>
+        <p onClick={getEverything}>Get everything</p>
+        <p onClick={saveSomething}>Save something</p>
       </header>
     </div>
   );

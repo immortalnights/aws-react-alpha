@@ -1,0 +1,31 @@
+{
+  "staging": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-amplify0cd17e7d81994-staging-113238-authRole",
+      "UnauthRoleArn": "arn:aws:iam::404355699195:role/amplify-amplify0cd17e7d81994-staging-113238-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::404355699195:role/amplify-amplify0cd17e7d81994-staging-113238-authRole",
+      "Region": "eu-west-2",
+      "DeploymentBucketName": "amplify-amplify0cd17e7d81994-staging-113238-deployment",
+      "UnauthRoleName": "amplify-amplify0cd17e7d81994-staging-113238-unauthRole",
+      "StackName": "amplify-amplify0cd17e7d81994-staging-113238",
+      "StackId": "arn:aws:cloudformation:eu-west-2:404355699195:stack/amplify-amplify0cd17e7d81994-staging-113238/14df3ba0-3e2c-11ec-95cd-0a8c5827a096",
+      "AmplifyAppId": "d3mokspwpedmva"
+    },
+    "categories": {
+      "function": {
+        "fetchSteamGame": {
+          "deploymentBucketName": "amplify-amplify0cd17e7d81994-staging-113238-deployment",
+          "s3Key": "amplify-builds/fetchSteamGame-36392b34776957476e51-build.zip"
+        },
+        "dynamo53dd606aTriggera8f441cf": {
+          "deploymentBucketName": "amplify-amplify0cd17e7d81994-staging-113238-deployment",
+          "s3Key": "amplify-builds/dynamo53dd606aTriggera8f441cf-583343673535696c4947-build.zip"
+        },
+        "awsreactalpha2cd7d58f": {
+          "deploymentBucketName": "amplify-amplify0cd17e7d81994-staging-113238-deployment",
+          "s3Key": "amplify-builds/awsreactalpha2cd7d58f-3974304b4b3278304368-build.zip"
+        }
+      }
+    }
+  }
+}

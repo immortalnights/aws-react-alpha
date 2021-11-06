@@ -1,0 +1,4 @@
+type Game @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  name: String
+}
